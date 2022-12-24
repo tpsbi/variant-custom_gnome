@@ -14,6 +14,55 @@ kali-linux-default
 
 # Graphical desktop
 kali-desktop-i3-gaps
+kali-themes
+feh
 
 # Kali applications
-kali-themes
+
+#for autorecon
+seclists
+curl
+dnsrecon
+enum4linux
+feroxbuster
+gobuster
+impacket-scripts
+nbtscan
+nikto
+nmap
+onesixtyone
+oscanner
+redis-tools
+smbclient
+smbmap
+snmpwalk
+sslscan
+svwar
+tnscmd10g
+whatweb
+wkhtmltopdf
+
+#misc
+python3-pip
+golang
+python2
+powershell
+bash-completion
+vim
+terminator
+iputils-arping
+iputils-ping
+iputils-tracepath
+iputils-clockdiff
+man-db
+less
+freerdp2-x11
+acl
+nishang
+fcrackzip
+gcc-multilib
+mingw-w64
+proxychains
+gosu
+evil-winrm
+kali-tweaks
