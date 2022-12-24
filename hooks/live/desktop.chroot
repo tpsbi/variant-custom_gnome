@@ -1,0 +1,20 @@
+#!/bin/sh
+
+mkdir -p /etc/skel/.config/i3
+cp /etc/i3/config /etc/skel/.config/i3/config
+sed -i "s/bindsym Mod1+Return exec i3-sensible-terminal/bindsym Mod1+Return exec --no-startup-id i3-sensible-terminal/g" /etc/skel/.config/i3/config
+sed -i '$d' /etc/skel/.config/i3/config
+echo 'for_window [class=".*"] border pixel 0' >>  /etc/skel/.config/i3/config
+echo 'gaps inner 10' >>  /etc/skel/.config/i3/config
+echo 'gaps outer 10' >>  /etc/skel/.config/i3/config
+echo 'exec --no-startup-id feh --bg-fill /etc/alternatives/desktop-background' >>  /etc/skel/.config/i3/config
+echo 'exec_always --no-startup-id xrandr' >>  /etc/skel/.config/i3/config
+echo 'exec_always --no-startup-id xrdb -merge ~/.Xresources' >>  /etc/skel/.config/i3/config
+
+wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/i3status.conf -O /etc/i3status.conf
+
+wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/Xresources -O /etc/skel/.Xresources
+
+mkdir -p /etc/skel/.config/terminator
+
+wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/terminatorconfig -O /etc/skel/.config/terminator/config
