@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Copy dotfiles to /etc/skel:
+rsync -a /usr/share/i3-gaps-dotfiles/etc/skel/ /etc/skel/
+
+# Copy dotfiles to /root/:
+rsync -a /usr/share/i3-gaps-dotfiles/etc/skel/ /root/
+
+# Copy scripts to /usr/bin/:
+rsync -a /usr/share/i3-gaps-dotfiles/usr/bin/ /usr/bin/
