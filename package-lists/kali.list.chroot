@@ -35,9 +35,9 @@ oscanner
 redis-tools
 smbclient
 smbmap
-snmpwalk
+snmp
 sslscan
-svwar
+sipvicious
 tnscmd10g
 whatweb
 wkhtmltopdf
