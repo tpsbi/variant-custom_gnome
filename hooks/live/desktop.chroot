@@ -11,6 +11,8 @@ echo 'exec --no-startup-id feh --bg-fill /etc/alternatives/desktop-background' >
 echo 'exec_always --no-startup-id xrandr' >>  /etc/skel/.config/i3/config
 echo 'exec_always --no-startup-id xrdb -merge ~/.Xresources' >>  /etc/skel/.config/i3/config
 
+rm -f /etc/i3status.conf
+
 wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/i3status.conf -O /etc/i3status.conf
 
 wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/Xresources -O /etc/skel/.Xresources
