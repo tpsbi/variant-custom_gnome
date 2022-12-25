@@ -3,4 +3,3 @@
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 python2 get-pip.py
 rm -f get-pip.py
-python2 -m pip install pyftpdlib impacket --no-cache-dir
