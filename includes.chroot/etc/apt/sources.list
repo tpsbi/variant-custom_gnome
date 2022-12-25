@@ -1,0 +1,2 @@
+deb http://http.kali.org/kali kali-last-snapshot main contrib non-free
+deb http://deb.debian.org/debian stable  main contrib non-free
