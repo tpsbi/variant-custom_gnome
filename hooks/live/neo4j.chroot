@@ -3,7 +3,7 @@
 wget -O - https://debian.neo4j.com/neotechnology.gpg.key | apt-key add -
 echo 'deb https://debian.neo4j.com stable latest' | tee -a /etc/apt/sources.list.d/neo4j.list
 apt update
-apt install -y neo4j
+apt install -y bloodhound
 
 echo 'dbms.security.auth_minimum_password_length=5' >> /etc/neo4j/neo4j.conf
 systemctl enable --now neo4j
