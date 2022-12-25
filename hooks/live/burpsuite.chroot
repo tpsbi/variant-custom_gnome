@@ -2,6 +2,9 @@
 
 rm -f /usr/bin/burpsuite /usr/share/burpsuite/burpsuite.jar
 
+wget 'https://portswigger-cdn.net/burp/releases/download?product=community&type=Linux' -O /tmp/burpsuite.sh
+chmod +x /tmp/burpsuite.sh
+
 wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/burpsuite-expect -O /tmp/burpsuite-expect
 chmod +x /tmp/burpsuite-expect
 /tmp/burpsuite-expect
