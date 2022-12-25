@@ -1,6 +1,6 @@
 #!/bin/sh
 
-get https://dl.pstmn.io/download/latest/linux64 -P /tmp && \
+wget https://dl.pstmn.io/download/latest/linux64 -P /tmp && \
 tar xvzf /tmp/linux64 -C /opt/ && \
 rm -f /tmp/linux64 && \
 ln -s /opt/Postman/app/Postman /usr/local/bin/Postman
