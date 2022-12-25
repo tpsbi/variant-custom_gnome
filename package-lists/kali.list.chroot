@@ -44,7 +44,6 @@ wkhtmltopdf
 
 #misc
 python3-pip
-bloodhound
 golang
 python2
 powershell
