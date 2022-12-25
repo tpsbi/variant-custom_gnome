@@ -8,4 +8,5 @@ chmod +x /tmp/burpsuite.sh
 wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/burpsuite-expect -O /tmp/burpsuite-expect
 chmod +x /tmp/burpsuite-expect
 /tmp/burpsuite-expect
+rm -f /tmp/burpsuite.sh
 rm -f /tmp/burpsuite-expect
