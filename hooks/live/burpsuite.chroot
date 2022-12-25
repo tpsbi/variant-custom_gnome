@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -f /usr/bin/burpsuite /usr/share/burpsuite/burpsuite.jar
+
+wget https://raw.githubusercontent.com/tpsbi/variant-i3_gaps/main/burpsuite-expect -O /tmp/burpsuite-expect
+chmod +x /tmp/burpsuite-expect
+/tmp/burpsuite-expect
+rm -f /tmp/burpsuite-expect
