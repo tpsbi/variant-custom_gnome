@@ -1,0 +1,12 @@
+#!/bin/bash
+
+printf '%s\n' "deb https://download.docker.com/linux/debian $(distro-info --stable) stable" |
+  tee /etc/apt/sources.list.d/docker-ce.list
+  
+curl -fsSL https://download.docker.com/linux/debian/gpg |
+  gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
+  
+apt-get update
+apt-get install -y docker-ce docker-ce-cli containerd.io
+apt-get clean
+rm -rf /var/lib/apt/lists/*
