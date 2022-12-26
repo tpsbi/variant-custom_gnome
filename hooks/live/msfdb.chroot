@@ -5,3 +5,4 @@ make-ssl-cert generate-default-snakeoil
 systemctl enable postgresql
 service postgresql start
 msfdb init
+service postgresql stop
