@@ -9,3 +9,4 @@ echo 'dbms.security.auth_minimum_password_length=5' >> /etc/neo4j/neo4j.conf
 systemctl enable neo4j
 service neo4j start
 neo4j-admin dbms set-initial-password neo4j
+service neo4j stop
