@@ -1,0 +1,18 @@
+#!/bin/bash
+
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+echo 'deb https://packages.microsoft.com/repos/vscode stable main' | tee -a /etc/apt/sources.list.d/vscode.list
+
+apt update
+apt install -y code
+
+mkdir -p /etc/skel/.vscode/extensions
+
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension ms-python.python --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension ms-vscode.PowerShell --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension ms-vscode.cpptools-extension-pack --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension ms-dotnettools.csharp --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension golang.go --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension iliazeus.vscode-ansi  --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension tomoki1207.pdf --user-data-dir /tmp/
+code --extensions-dir /etc/skel/.vscode/extensions --install-extension robertz.code-snapshot --user-data-dir /tmp/
