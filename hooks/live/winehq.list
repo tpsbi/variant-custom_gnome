@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir -pm755 /etc/apt/keyrings
+wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+
+echo 'deb https://dl.winehq.org/wine-builds/debian/ testing main' | tee -a /etc/apt/sources.list.d/winehq.list
+
+apt update
+apt install -y --install-recommends winehq-stable
