@@ -10,3 +10,6 @@ chmod +x /tmp/burpsuite-expect
 /tmp/burpsuite-expect
 rm -f /tmp/burpsuite.sh
 rm -f /tmp/burpsuite-expect
+
+mkdir /etc/skel/.BurpSuite
+touch /etc/skel/.BurpSuite/burpbrowser
