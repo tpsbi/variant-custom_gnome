@@ -5,8 +5,10 @@ export DONT_PROMPT_WSL_INSTALL=1
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 echo 'deb https://packages.microsoft.com/repos/vscode stable main' | tee -a /etc/apt/sources.list.d/vscode.list
 
-apt update
-apt install -y code
+apt-get update
+apt0get install -y code
+apt-get clean
+rm -rf /var/lib/apt/lists/*
 
 mkdir -p /etc/skel/.vscode/extensions
 
