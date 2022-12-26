@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dpkg --add-architecture i386
+
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
 echo 'deb https://dl.winehq.org/wine-builds/debian/ testing main' | tee -a /etc/apt/sources.list.d/winehq.list
 
