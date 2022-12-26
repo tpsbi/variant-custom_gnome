@@ -10,6 +10,5 @@ rm -rf /var/lib/apt/lists/*
 
 rm -rf /tmp/sliver.sh
 
-systemctl enable sliver
-service start sliver
 service stop sliver
+systemctl enable sliver
