@@ -1,0 +1,22 @@
+#!/bin/sh
+
+git clone https://github.com/itm4n/PrivescCheck.git /opt/PrivescCheck
+
+git clone https://github.com/carlospolop/PEASS-ng.git /opt/PEASS-ng
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -P /opt/PEASS-ng/linPEAS/
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany.exe -P /opt/PEASS-ng/winPEAS/
+
+git clone https://github.com/61106960/adPEAS.git /opt/PEASS-ng/adPEAS
+
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -P /opt/PEASS-ng/linPEAS/
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEASany.exe -P /opt/PEASS-ng/winPEAS/
+
+wget https://live.sysinternals.com/PsExec.exe -P /usr/share/windows-resources/binaries/
+wget https://web.archive.org/web/20071007120748/http://download.sysinternals.com/Files/Accesschk.zip
+unzip Accesschk.zip -d /usr/share/windows-resources/binaries/ -x Eula.txt
+rm -f Accesschk.zip
+
+rm -f /usr/share/windows-resources/binaries/plink.exe 
+wget https://the.earth.li/~sgtatham/putty/latest/w32/plink.exe -P  /usr/share/windows-resources/binaries/
+
+chmod +x /usr/share/windows-resources/binaries/*
