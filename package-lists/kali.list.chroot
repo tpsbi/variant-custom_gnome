@@ -16,7 +16,7 @@ kali-linux-default
 kali-themes
 kali-desktop-i3-gaps
 feh
-gdm3
+#gdm3
 
 # Kali applications
 
