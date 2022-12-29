@@ -16,7 +16,6 @@ kali-linux-default
 kali-themes
 kali-desktop-i3-gaps
 feh
-#gdm3
 
 # Kali applications
 
@@ -68,4 +67,3 @@ gosu
 evil-winrm
 kali-tweaks
 distro-info
-
