@@ -1,9 +1,0 @@
-#!/usr/bin/expect
-
-spawn "dpkg-reconfigure gdm3" -f readline
-
-expect "Default display manager:"
-send "gdm3 \r"
-
-# done
-expect eof
