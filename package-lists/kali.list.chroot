@@ -13,9 +13,7 @@ kali-linux-default
 #kali-linux-everything
 
 # Graphical desktop
-kali-themes
-kali-desktop-i3-gaps
-feh
+kali-desktop-gnome
 
 # Kali applications
 
