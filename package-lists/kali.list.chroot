@@ -13,7 +13,9 @@ kali-linux-default
 #kali-linux-everything
 
 # Graphical desktop
-kali-desktop-gnome
+gnome-session
+gdm3
+kali-themes
 
 # Kali applications
 
