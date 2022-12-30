@@ -16,4 +16,4 @@ echo 'exec_always --no-startup-id xrdb -merge ~/.Xresources' >>  /etc/skel/.conf
 systemctl set-default graphical.target
 
 chmod +x /root/xorg.sh
-echo '@reboot /root/xorg.sh' >> /etc/crontab
+echo '@reboot root /root/xorg.sh' >> /etc/crontab
