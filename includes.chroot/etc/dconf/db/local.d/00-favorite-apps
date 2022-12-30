@@ -1,0 +1,2 @@
+[org/gnome/shell]
+favorite-apps = ['terminator.desktop', 'code.desktop', 'google-chrome.desktop', 'install4j_tmnpg7-BurpSuiteCommunity.desktop', 'Postman.desktop', 'org.wireshark.Wireshark.desktop']
