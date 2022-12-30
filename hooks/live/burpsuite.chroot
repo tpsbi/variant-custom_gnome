@@ -12,3 +12,5 @@ rm -f /root/burpsuite-expect
 
 mkdir /etc/skel/.BurpSuite
 touch /etc/skel/.BurpSuite/burpbrowser
+
+mv /usr/share/applications/*BurpSuiteCommunity.desktop /usr/share/applications/BurpSuiteCommunity.desktop
