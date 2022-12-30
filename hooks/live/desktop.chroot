@@ -14,3 +14,6 @@ echo 'exec_always --no-startup-id xrandr' >>  /etc/skel/.config/i3/config
 echo 'exec_always --no-startup-id xrdb -merge ~/.Xresources' >>  /etc/skel/.config/i3/config
 
 systemctl set-default graphical.target
+
+chmod +x /root/xorg.sh
+echo '@reboot /root/xorg.sh' >> /etc/crontab
